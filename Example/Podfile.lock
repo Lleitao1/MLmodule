@@ -1,0 +1,16 @@
+PODS:
+  - MLmodule (1.0.0)
+
+DEPENDENCIES:
+  - MLmodule (from `../`)
+
+EXTERNAL SOURCES:
+  MLmodule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MLmodule: f501dcf210af520e486fc0abc0833676166adc1b
+
+PODFILE CHECKSUM: 0e6f0c7e4763e87076cc8def93d1c92e18138d30
+
+COCOAPODS: 1.10.1

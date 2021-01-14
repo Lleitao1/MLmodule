@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MLmodule'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of MLmodule.'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'MLmodule/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MLmodule' => ['MLmodule/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'MLmodule' => ['MLmodule/Assets/**']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
