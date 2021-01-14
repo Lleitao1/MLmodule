@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'MLmodule_Example' do
+  pod 'MLmodule', :path => '../'
+
+  target 'MLmodule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
