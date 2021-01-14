@@ -9,8 +9,8 @@ public class AnalysisResultViewController: UIViewController {
     @IBOutlet weak var uiResulLabel: UILabel!
     @IBOutlet weak var uiConfidenceLabel: UILabel!
     
-    private var results: [VNClassificationObservation]
-    private var imageToLoad: UIImage
+    public var results: [VNClassificationObservation]
+    public var imageToLoad: UIImage
     
     @available(iOS 11.0, *)
     public init(image: UIImage, results: [VNClassificationObservation]) {
@@ -29,7 +29,7 @@ public class AnalysisResultViewController: UIViewController {
     }
     
     //MARK: - Methods
-    private func setupResults() {
+    public func setupResults() {
         uiResultImageView.image = imageToLoad
         if let firstResult = results.first {
             uiResulLabel.text = firstResult.identifier
