@@ -3,7 +3,7 @@ import UIKit
 import Vision
 
 @available(iOS 11.0, *)
-class AnalysisResultViewController: UIViewController {
+public class AnalysisResultViewController: UIViewController {
     
     @IBOutlet weak var uiResultImageView: UIImageView!
     @IBOutlet weak var uiResulLabel: UILabel!
@@ -13,7 +13,7 @@ class AnalysisResultViewController: UIViewController {
     private var imageToLoad: UIImage
     
     @available(iOS 11.0, *)
-    init(image: UIImage, results: [VNClassificationObservation]) {
+    public init(image: UIImage, results: [VNClassificationObservation]) {
         self.imageToLoad = image
         self.results = results
         super.init(nibName: "AnalysisResultViewController", bundle: nil)
@@ -23,7 +23,7 @@ class AnalysisResultViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupResults()
     }
