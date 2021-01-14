@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'MLmodule/Classes/**/*'
   
    s.resource_bundles = {
-     'MLmodule' => ['MLmodule/Assets/**']
+     'MLmodule' => ['MLmodule/Assets/*']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
