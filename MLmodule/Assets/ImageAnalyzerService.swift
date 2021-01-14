@@ -14,7 +14,7 @@ protocol ImageAnalyzerService {
     func analyzeImage(image: UIImage, navigationController: UINavigationController, failure: @escaping (_ error: String) -> Void)
 }
 
-class ImageAnalyzer: ImageAnalyzerService {
+public class ImageAnalyzer: ImageAnalyzerService {
     
     func analyzeImage(image: UIImage, navigationController: UINavigationController, failure: @escaping (_ error: String) -> Void) {
         
