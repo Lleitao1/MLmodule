@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '14.1'
 
 target 'MLmodule_Example' do
-  pod 'MLmodule', :path => '../'
+  pod 'MLmodule', :path => '/Users/labdelle/Desktop/modularizacao - cópia'
 
   target 'MLmodule_Tests' do
     inherit! :search_paths

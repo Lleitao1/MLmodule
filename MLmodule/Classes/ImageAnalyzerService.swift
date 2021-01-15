@@ -10,13 +10,17 @@ import UIKit
 import CoreML
 import Vision
 
-protocol ImageAnalyzerService {
+public protocol ImageAnalyzerService {
     func analyzeImage(image: UIImage, navigationController: UINavigationController, failure: @escaping (_ error: String) -> Void)
 }
 
-class ImageAnalyzer: ImageAnalyzerService {
+public class ImageAnalyzer: ImageAnalyzerService {
     
-    func analyzeImage(image: UIImage, navigationController: UINavigationController, failure: @escaping (_ error: String) -> Void) {
+    
+    public init() {
+    }
+    
+    public func analyzeImage(image: UIImage, navigationController: UINavigationController, failure: @escaping (_ error: String) -> Void) {
         
         guard let ciImage = CIImage(image: image) else {
             failure("couldn't convert UIImage to CIImage")
